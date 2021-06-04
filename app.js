@@ -80,11 +80,8 @@ function reply(msg, reply_token, answer) {
                 "footer": {
                     "type": "box",
                     "layout": "vertical",
+                    "spacing": "md",
                     "contents": [
-                        {
-                            "type": "spacer",
-                            "size": "xxl"
-                        },
                         {
                             "type": "button",
                             "style": "primary",
@@ -93,6 +90,16 @@ function reply(msg, reply_token, answer) {
                                 "type": "message",
                                 "label": "ลองใหม่!",
                                 "text": "มื้อนี้กินอะไรดี?"
+                            }
+                        },
+                        {
+                            "type": "button",
+                            "style": "secondary",
+                            "color": "#905c44",
+                            "action": {
+                                "type": "uri",
+                                "label": "ค้นหาร้าน",
+                                "uri": "https://www.google.co.th/maps/search/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3"
                             }
                         }
                     ]
